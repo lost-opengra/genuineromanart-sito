@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRA – Genuine Roman Art</title>
+<meta name="description" content="GRA – Genuine Roman Art: l'archivio del collettivo 2005–2010 e il sito dell'agenzia GRA Visual Communication.">
+<meta name="theme-color" content="#F2EFE8">
+<link rel="preload" href="/archivio/fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo';src:url(/archivio/fonts/archivo-wdth.woff2) format('woff2');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url(/archivio/fonts/jetbrains-mono.woff2) format('woff2');font-weight:100 800;font-display:swap}
+:root{--ink:#121212;--paper:#F2EFE8;--mut:#5A564E;--acc:#E8531F;--acc-d:#B23C0C}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;letter-spacing:.02em}
+.wrap{width:100%;max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;flex-direction:column;flex:1}
+.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:22px 0;border-bottom:1.5px solid var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.mark{position:relative;padding:clamp(40px,7vh,88px) 0 clamp(28px,5vh,56px)}
+.ring{position:absolute;left:clamp(110px,16vw,230px);top:50%;width:clamp(160px,22vw,320px);aspect-ratio:1;transform:translate(-50%,-50%);border:clamp(8px,1.2vw,16px) solid var(--acc);border-radius:50%}
+h1{position:relative;margin:0;font-weight:900;font-stretch:125%;font-size:clamp(88px,16vw,232px);line-height:.78;letter-spacing:-.045em}
+.sub{position:relative;margin:20px 0 0;font-weight:800;font-stretch:62%;font-size:clamp(28px,4vw,52px);line-height:.9;text-transform:uppercase}
+.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1.5px solid var(--ink);flex:1}
+.choice{display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(24px,3.5vw,44px) clamp(0px,2vw,32px) clamp(28px,4vw,48px) 0;text-decoration:none;color:var(--ink);min-height:300px;transition:background .2s}
+.choice+.choice{border-left:1.5px solid var(--ink);padding-left:clamp(20px,3vw,44px)}
+.choice .k{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--mut)}
+.choice h2{margin:12px 0 0;font-weight:800;font-stretch:62%;font-size:clamp(44px,5.6vw,84px);line-height:.88;text-transform:uppercase}
+.choice p{margin:16px 0 0;max-width:460px;font-size:clamp(17px,1.4vw,20px);line-height:1.45}
+.go{display:inline-flex;align-items:center;gap:14px;font-size:13px;text-transform:uppercase;letter-spacing:.1em;align-self:flex-start;min-height:48px;padding:0 24px;border:1.5px solid var(--ink);border-radius:999px;transition:background .2s,color .2s}
+.choice:hover .go,.choice:focus-visible .go{background:var(--ink);color:var(--paper)}
+.choice:hover h2{color:var(--acc-d)}
+.choice:focus-visible{outline:3px solid var(--acc);outline-offset:-3px}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--acc);display:inline-block}
+.ringdot{width:14px;height:14px;border-radius:50%;border:3px solid var(--ink);display:inline-block;box-sizing:border-box}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:20px 0 28px;border-top:1.5px solid var(--ink);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+@media (max-width:760px){
+  .choices{grid-template-columns:minmax(0,1fr)}
+  .choice{min-height:0;padding-right:0}
+  .choice+.choice{border-left:0;border-top:1.5px solid var(--ink);padding-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top mono"><span>GRA · Genuine Roman Art</span><span>Roma · dal 2005</span></header>
+<section class="mark">
+<div class="ring" aria-hidden="true"></div>
+<h1>GRA</h1>
+<p class="sub">Genuine Roman Art</p>
+</section>
+<nav class="choices" aria-label="Scegli dove andare">
+<a class="choice" href="/archivio/">
+<div><span class="k mono"><span class="dot" aria-hidden="true"></span>&nbsp; Il collettivo · 2005 — 2010</span>
+<h2>Archivio<br>mostre ed eventi</h2>
+<p>Tema/Colore, /RM, Pong, Nation e tutte le collaborazioni: la storia del collettivo anno per anno, con opere, artisti, luoghi e rassegna stampa.</p></div>
+<span class="go mono">Entra nell'archivio →</span>
+</a>
+<a class="choice" href="/home/">
+<div><span class="k mono"><span class="ringdot" aria-hidden="true"></span>&nbsp; L'agenzia · dal 2007</span>
+<h2>GRA Visual<br>Communication</h2>
+<p>L'agenzia di comunicazione visiva nata dal collettivo, che ha lavorato su identità, strategie digitali, web, eventi ed editoria per brand e startup. Oggi resta come archivio dei progetti.</p></div>
+<span class="go mono">Vedi i progetti dell'agenzia →</span>
+</a>
+</nav>
+<footer class="foot mono"><span>GRA — Genuine Roman Art</span><span>Opere © i rispettivi autori</span></footer>
+</div>
+</body>
+</html>
