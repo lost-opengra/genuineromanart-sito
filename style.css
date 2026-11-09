@@ -150,6 +150,7 @@ h1{position:relative;margin:0;font-weight:900;font-stretch:125%;font-size:clamp(
 .evh1{margin:0;font-weight:800;font-stretch:62%;font-size:clamp(48px,8vw,120px);line-height:.88;text-transform:uppercase;letter-spacing:-.005em}
 .evh1.big{font-weight:900;font-stretch:125%;font-size:clamp(56px,11vw,160px);letter-spacing:-.045em}
 .evsub{margin:18px 0 0;max-width:720px;font-size:clamp(18px,1.6vw,22px);line-height:1.4}
+.evdesc{margin:22px 0 0;max-width:680px;font-size:16px;line-height:1.6;color:#333}
 .evmeta{display:flex;flex-wrap:wrap;gap:12px 40px;margin:28px 0 0}
 .evmeta div{display:flex;flex-direction:column;gap:4px}
 .evmeta dt{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
