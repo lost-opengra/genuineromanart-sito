@@ -18,9 +18,11 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:'Archivo',sys
 .wrap{width:100%;max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;flex-direction:column;flex:1}
 .top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:22px 0;border-bottom:1.5px solid var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
 .mark{position:relative;padding:clamp(40px,7vh,88px) 0 clamp(28px,5vh,56px)}
-.ring{position:absolute;left:clamp(110px,16vw,230px);top:50%;width:clamp(160px,22vw,320px);aspect-ratio:1;transform:translate(-50%,-50%);border:clamp(8px,1.2vw,16px) solid var(--acc);border-radius:50%}
-h1{position:relative;margin:0;font-weight:900;font-stretch:125%;font-size:clamp(88px,16vw,232px);line-height:.78;letter-spacing:-.045em}
-.sub{position:relative;margin:20px 0 0;font-weight:800;font-stretch:62%;font-size:clamp(28px,4vw,52px);line-height:.9;text-transform:uppercase}
+.mark{display:flex;justify-content:space-between;align-items:flex-end;gap:clamp(24px,4vw,64px);flex-wrap:wrap}.brand{position:relative}
+.ring{position:absolute;left:clamp(76px,10.5vw,152px);top:50%;width:clamp(116px,15vw,214px);aspect-ratio:1;transform:translate(-50%,-50%);border:clamp(6px,.85vw,11px) solid var(--acc);border-radius:50%}
+.intro{position:relative;max-width:440px;margin:0;font-size:clamp(17px,1.4vw,20px);line-height:1.45}
+h1{position:relative;margin:0;font-weight:900;font-stretch:125%;font-size:clamp(64px,10.5vw,152px);line-height:.78;letter-spacing:-.045em}
+.sub{position:relative;margin:20px 0 0;font-weight:800;font-stretch:62%;font-size:clamp(22px,2.7vw,36px);line-height:.9;text-transform:uppercase}
 .choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1.5px solid var(--ink);flex:1}
 .choice{display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(24px,3.5vw,44px) clamp(0px,2vw,32px) clamp(28px,4vw,48px) 0;text-decoration:none;color:var(--ink);min-height:300px;transition:background .2s}
 .choice+.choice{border-left:1.5px solid var(--ink);padding-left:clamp(20px,3vw,44px)}
@@ -47,9 +49,12 @@ h1{position:relative;margin:0;font-weight:900;font-stretch:125%;font-size:clamp(
 <div class="wrap">
 <header class="top mono"><span>GRA · Genuine Roman Art</span><span>Roma · dal 2005</span></header>
 <section class="mark">
+<div class="brand">
 <div class="ring" aria-hidden="true"></div>
 <h1>GRA</h1>
 <p class="sub">Genuine Roman Art</p>
+</div>
+<p class="intro">Questo sito è l'archivio di GRA – Genuine Roman Art. Nata a Roma nel 2005 come collettivo di grafica, dal 2007 è stata anche un'agenzia di comunicazione visiva. Dopo vent'anni GRA ha chiuso: qui restano le mostre, le opere e i progetti.</p>
 </section>
 <nav class="choices" aria-label="Scegli dove andare">
 <a class="choice" href="/archivio/">
